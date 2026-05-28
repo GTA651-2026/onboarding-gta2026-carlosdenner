@@ -1,6 +1,6 @@
 # Rétroaction automatisée -- S01 (L'IA générative et l'ère agentique : orchestrer des experts sans en être un)
 
-_Générée le 2026-05-28T18:20:14+00:00 -- Run `20260528T180023Z-d01c8d01`_
+_Générée le 2026-05-28T20:32:03+00:00 -- Run `20260528T200936Z-acdfcf6a`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
@@ -19,7 +19,7 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> La déclaration fournie est le modèle non rempli et ne contient aucune information spécifique sur l'usage de l'IA. Veuillez compléter chaque section avec les outils, versions, étapes d'utilisation, méthode de validation humaine et les limites observées.
+> Le fichier fourni est le gabarit non rempli : les sections existent mais n'ont pas été renseignées. Remplissez chaque section avec des détails concrets (outil + version, étape précise, validation humaine et limites observées) avant de soumettre.
 
 **Sujets à ajouter ou expliciter pour la prochaine itération :**
 
@@ -39,11 +39,11 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260528T180023Z-d01c8d01`
+- **Run ID :** `20260528T200936Z-acdfcf6a`
 - **Devoir :** `S01`
 - **Étudiant·e :** `carlosdenner`
-- **Commit analysé :** `13f5ed7`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T180023Z-d01c8d01/carlosdenner/`
+- **Commit analysé :** `f62b53f`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T200936Z-acdfcf6a/carlosdenner/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
