@@ -1,25 +1,20 @@
 # Rétroaction automatisée -- S01 (L'IA générative et l'ère agentique : orchestrer des experts sans en être un)
 
-_Générée le 2026-05-28T20:32:03+00:00 -- Run `20260528T200936Z-acdfcf6a`_
+_Générée le 2026-05-28T21:03:52+00:00 -- Run `20260528T204526Z-4170164e`_
 
-Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
+Ce document est produit par un pipeline reproductible (validation automatique du livrable + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
 ---
 
-## 1. Vérification automatique de la requête SQL
-
-La vérification automatique n'a pas pu être réalisée (gate non applicable (type=text_artifact, must_run=False)).
-
-
-## 2. Rétroaction pédagogique sur le brief
+## 1. Rétroaction pédagogique sur le brief
 
 _La rétroaction détaillée n'a pas pu être générée (brief introuvable: C:\Users\carlo\Dropbox\Universite de Sherbrooke\Academic Operating System\content\courses\GIS805\reference-solution\student-repos\onboarding-gta2026-carlosdenner\portfolio\L1_reflexion_role_specialise.pdf)._
 
 Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obtenir une vue indicative.
 
-## 3. Déclaration d'utilisation de l'IA
+## 2. Déclaration d'utilisation de l'IA
 
-> Le fichier fourni est le gabarit non rempli : les sections existent mais n'ont pas été renseignées. Remplissez chaque section avec des détails concrets (outil + version, étape précise, validation humaine et limites observées) avant de soumettre.
+> La déclaration est un gabarit non rempli et ne fournit aucune information spécifique sur l'usage de l'IA. Veuillez compléter chaque section en indiquant l'outil et sa version, l'étape précise d'utilisation, la manière dont vous avez validé la sortie et les limites observées.
 
 **Sujets à ajouter ou expliciter pour la prochaine itération :**
 
@@ -28,22 +23,22 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 - comment la sortie a été validée par l'humain
 - limites ou erreurs observées
 
-## 4. Pistes d'action pour la prochaine itération
+## 3. Pistes d'action pour la prochaine itération
 
-- Compléter `ai-usage.md` en y ajoutant : outils utilisés (nom + version/modèle).
-- Compléter `ai-usage.md` en y ajoutant : à quelle étape l'IA a été utilisée.
-- Compléter `ai-usage.md` en y ajoutant : comment la sortie a été validée par l'humain.
-- Compléter `ai-usage.md` en y ajoutant : limites ou erreurs observées.
+- Compléter i-usage.md en y ajoutant : outils utilisés (nom + version/modèle).
+- Compléter i-usage.md en y ajoutant : à quelle étape l'IA a été utilisée.
+- Compléter i-usage.md en y ajoutant : comment la sortie a été validée par l'humain.
+- Compléter i-usage.md en y ajoutant : limites ou erreurs observées.
 
 ---
 
-## 5. Traçabilité
+## 4. Traçabilité
 
-- **Run ID :** `20260528T200936Z-acdfcf6a`
+- **Run ID :** `20260528T204526Z-4170164e`
 - **Devoir :** `S01`
 - **Étudiant·e :** `carlosdenner`
-- **Commit analysé :** `f62b53f`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T200936Z-acdfcf6a/carlosdenner/`
+- **Commit analysé :** `87c6a89`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T204526Z-4170164e/carlosdenner/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
