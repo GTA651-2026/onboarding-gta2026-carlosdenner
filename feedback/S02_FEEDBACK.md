@@ -1,6 +1,6 @@
 # Rétroaction automatisée -- S02 (Sélectionner des solutions IA : décision, opérations, productivité)
 
-_Générée le 2026-05-26T14:26:07+00:00 -- Run `20260526T140803Z-ec457158`_
+_Générée le 2026-05-28T17:44:20+00:00 -- Run `20260528T172647Z-afdf4262`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
@@ -13,35 +13,35 @@ La vérification automatique n'a pas pu être réalisée (gate non applicable (t
 
 ## 2. Rétroaction pédagogique sur le brief
 
-> Le document soumis est un gabarit d'exercice non complété ; il ne contient ni modèle, ni validations, ni recommandation exécutive. Pour progresser, remplissez la grille avec analyses chiffrées, ajoutez requêtes de validation reproductibles et un brief décisionnel clair par contexte.
+> Le rendu soumis est un gabarit non rempli : les contextes sont seulement énoncés et la grille reste vide, sans justifications ni recommandations. Remplissez les cellules avec des justifications vérifiables, nommez les rôles métiers et fournissez une recommandation distincte et argumentée par contexte, ainsi qu'un ai-usage.md complet.
 
 ### Observations par dimension
 
-**Model quality**
-- Observation : Le document fourni est un gabarit d'exercice (grille de sélection) sans schéma dimensionnel ni réponse à la question CEO.
-- Piste d'amélioration : Remplir la grille avec un schéma clair et explicite (grain, mesures et dimensions), indiquer le pattern choisi (ex. SCD, role-playing) et justifier chaque choix par rapport à la question CEO.
+**Contexte organisationnel**
+- Observation : Le document indique deux contextes (PME de 50 employés et grande entreprise 500+ employés) mais les sections « Décrivez brièvement la PME » et « Décrivez brièvement » restent génériques et sans budget ni secteur.
+- Piste d'amélioration : Ajouter pour chaque contexte une courte fiche (secteur, maturité numérique, budget IA approximatif, taille et équipe IT) et expliquer pourquoi ces éléments modifient la recommandation.
 
-**Validation quality**
-- Observation : Aucune requête SQL de validation ou vérification n'est fournie dans le gabarit pour démontrer que le modèle retourne les bons résultats.
-- Piste d'amélioration : Ajouter une ou deux requêtes de validation reproductibles (SQL), traiter les cas limites (NULL, valeurs inconnues) et montrer un exemple de résultat confirmant la réponse CEO.
+**Justification criteres**
+- Observation : La grille est vide pour tous les critères (cellules non renseignées), il n'y a aucune justification chiffrée ou qualitative pour les scores d'impact, faisabilité, coût ou risque.
+- Piste d'amélioration : Remplir chaque cellule de la grille pour les trois agents et les deux contextes avec une justification factuelle ou une hypothèse vérifiable pour chacun des quatre critères.
 
-**Executive justification**
-- Observation : Le fichier est un énoncé de tâche demandant une recommandation pour PME et grande entreprise mais ne contient aucune recommandation exécutoire adressée au CEO.
-- Piste d'amélioration : Rédiger un board brief de 150–300 mots en langage décisionnel, avec recommandation claire par contexte et évidence chiffrée issue du modèle.
+**Role specialise identifie**
+- Observation : Les lignes « Rôle spécialisé orchestré » sont laissées vides et il n'y a aucune description métier (ex. : quel rôle remplace ou augmente).
+- Piste d'amélioration : Nommer pour chaque agent le rôle métier précis (ex. « agent de décision — priorisation des opportunités commerciales ») et donner un exemple concret de valeur créée.
 
-**Process trace**
-- Observation : La remise fournie est uniquement un gabarit ; il n'y a aucune trace de commits git, ni de note sur l'utilisation d'IA ou décisions documentées.
-- Piste d'amélioration : Inclure un historique Git avec au moins 3 commits significatifs et une section ai-usage.md décrivant outils IA, usage précis et validation humaine.
+**Recommandation argumentee**
+- Observation : Les sections « Recommandation pour la PME » et « Recommandation pour la grande entreprise » sont des placeholders sans recommandation ni argumentation sur les compromis.
+- Piste d'amélioration : Formuler une recommandation claire par contexte, lier la décision aux scores de la grille et expliquer pourquoi les autres options sont écartées (compromis valeur/risque/coût).
 
-**Reproducibility**
-- Observation : Aucun artefact exécutable (script DuckDB, données ou README reproduisible) n'est attaché au gabarit.
-- Piste d'amélioration : Fournir un README et un script de vérification (clone → exécuter → obtenir les mêmes outputs) sans chemins codés en dur et avec instructions claires.
+**Ai disclosure**
+- Observation : Le brief demande « Mettez à jour `ai-usage.md` » mais aucun contenu d'ai-usage.md n'est fourni dans le dépôt soumis.
+- Piste d'amélioration : Ajouter un fichier ai-usage.md mentionnant les outils (ou « aucun »), à quelle étape ils ont été utilisés, comment les résultats ont été validés et quelles limites ont été observées.
 
-_Quelques points appellent une attention particulière lors de la prochaine itération : brief_template_not_completed._
+_Quelques points appellent une attention particulière lors de la prochaine itération : brief_template_non_rempli, ai_usage_md_absent._
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> Le fichier fourni est le gabarit vierge sans informations remplies pour ce livrable. Remplissez chaque section demandée en indiquant les outils (nom + version), l'étape d'utilisation, la validation humaine et les limites observées.
+> La déclaration fournie est un gabarit non rempli et ne répond à aucun des sujets obligatoires. Veuillez compléter chaque section avec des informations spécifiques (nom et version de l'outil, étape d'utilisation, validation humaine et limites observées).
 
 **Sujets à ajouter ou expliciter pour la prochaine itération :**
 
@@ -62,11 +62,11 @@ _Quelques points appellent une attention particulière lors de la prochaine ité
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260526T140803Z-ec457158`
+- **Run ID :** `20260528T172647Z-afdf4262`
 - **Devoir :** `S02`
 - **Étudiant·e :** `carlosdenner`
-- **Commit analysé :** `fd3e2f8`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260526T140803Z-ec457158/carlosdenner/`
+- **Commit analysé :** `f089508`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T172647Z-afdf4262/carlosdenner/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
